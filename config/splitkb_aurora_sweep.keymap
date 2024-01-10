@@ -48,7 +48,7 @@
                 &kp Q &kp W &kp E &kp R &kp T                       &kp Y &kp U &td_i_esc &kp O   &kp P
                 &kp A &kp S &kp D &kp F &kp G                       &kp H &kp J &kp K     &kp L   &kp SEMI
                 &kp Z &kp X &kp C &kp V &kp B                       &kp N &kp M &kp CMMA  &kp DOT &kp FSLH
-                                &lm 1 LCTRL &mt RALT SPC                  &mt LSFT RET &mo 2
+                                &lm 1 LCTRL &mt RALT SPC                  &mt LSFT RET &lm 2 LGUI
               >;
             };
 
