@@ -26,7 +26,7 @@
         tapping-term-ms = <200>;
         quick-tap-ms = <200>;
         require-prior-idle-ms = <125>;
-        bindings = <&sk LCTRL>, <&mo 1>;
+        bindings = <&sk LCTRL &mo 1>;
     };
     behaviors {
         td_i_esc: tap_dance_i_esc {
