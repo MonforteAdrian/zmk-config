@@ -29,7 +29,7 @@
     behaviors {
         td_i_esc: tap_dance_i_esc {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>
+            #binding-cells = <0>;
             tapping-term-ms = <50>;
             bindings = <&kp I>, <&kp ESC>;
         };
