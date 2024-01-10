@@ -19,6 +19,15 @@
 };
 
 / {
+    ctrl_1: ctrl_tap_1_hold {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <125>;
+        bindings = <&sk LCTRL>, <&mo 1>;
+    };
     behaviors {
         td_i_esc: tap_dance_i_esc {
             compatible = "zmk,behavior-tap-dance";
@@ -44,7 +53,7 @@
                 &kp Q &kp W &kp E &kp R &kp T                       &kp Y &kp U &td_i_esc &kp O   &kp P
                 &kp A &kp S &kp D &kp F &kp G                       &kp H &kp J &kp K     &kp L   &kp SEMI
                 &kp Z &kp X &kp C &kp V &kp B                       &kp N &kp M &kp CMMA  &kp DOT &kp FSLH
-                                &mt <&sk LCTRL, &mo 1> &mt RALT SPC                  &mt LSFT RET &mo 2
+                                &ctrl_1 &mt RALT SPC                  &mt LSFT RET &mo 2
               >;
             };
 
