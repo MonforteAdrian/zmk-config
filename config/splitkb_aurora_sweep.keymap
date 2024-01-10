@@ -54,7 +54,7 @@
                 &kp Q &kp W &kp E &kp R &kp T                       &kp Y &kp U &td_i_esc &kp O   &kp P
                 &kp A &kp S &kp D &kp F &kp G                       &kp H &kp J &kp K     &kp L   &kp SEMI
                 &kp Z &kp X &kp C &kp V &kp B                       &kp N &kp M &kp CMMA  &kp DOT &kp FSLH
-                                &mt <&sk LCTRL &mo 1> &mt RALT SPC                  &mt LSFT RET &mo 2
+                                &mt <&sk LCTRL, &mo 1> &mt RALT SPC                  &mt LSFT RET &mo 2
               >;
             };
 
