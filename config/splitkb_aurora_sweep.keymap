@@ -28,9 +28,9 @@
 
     behaviors {
         td_i_esc: tap_dance_i_esc {
-          compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>
-            timeout-ms = <50>;
+            timeout-term-ms = <50>;
             bindings = <&kp I>, <&kp ESC>;
         };
     };
