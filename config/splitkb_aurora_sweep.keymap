@@ -21,11 +21,20 @@
         
     behaviors {
         // tap once i = i, tap twice i = esc
-        td_i_esc: tap_dance_i_esc {
+        prior_idle_td_i_esc: tap_dance_i_esc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings = <&kp I>, <&kp ESC>;
+        };
+
+        // allow to instan print capital i on shift tap-dance bahavior
+        td_i_esc: shift_td_i_esc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&prior_idle_td_i_esc>, <&kp I>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
 
         // layer on hold, stiky mod on tap
