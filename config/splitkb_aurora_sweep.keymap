@@ -32,9 +32,8 @@
         td_i_esc: shift_td_i_esc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&prior_idle_td_i_esc>, <&kp I>;
+            bindings = <&prior_idle_td_i_esc>, <&kp LS(I)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
         };
 
         // layer on hold, stiky mod on tap
