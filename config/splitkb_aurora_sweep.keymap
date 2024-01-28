@@ -24,7 +24,7 @@
         prior_idle_td_i_esc: tap_dance_i_esc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp I>, <&kp ESC>;
         };
 
