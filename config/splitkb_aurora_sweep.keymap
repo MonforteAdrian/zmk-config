@@ -73,7 +73,7 @@
                 &kp EXCL   &kp AT    &kp LBRC &kp RBRC &kp PIPE         &kp TAB   &kp UNDER &kp SQT   &kp BSLH &none
                 &kp HASH   &kp DLLR  &kp LPAR &kp RPAR &none            &kp PLUS  &kp MINUS &kp DQT   &kp STAR &kp AMPS
                 &kp PRCNT  &kp CARET &kp LBKT &kp RBKT &kp TILDE        &kp CAPS  &kp EQUAL &kp GRAVE &none    &none
-                                              &mo 3    &mo 4            &kp SPC   &mo 2
+                                              &mo 3    &mo 5            &kp SPC   &mo 2
               >;
             };
             nav_layer {
@@ -84,12 +84,20 @@
                                   &trans &trans   &trans   &trans
               >;
             };
+            play_layer {
+              bindings = <
+                &none &kp N1 &kp N2 &kp N3 &none     &none  &none &none &none &none
+                &none &none  &kp W  &kp E  &none     &to 0  &none &none &none &none
+                &none &kp A  &kp S  &kp D  &none     &none  &none &none &none &none
+                                    &trans &trans    &trans &trans
+              >;
+            };
             fun_layer {
               bindings = <
-                &bt BT_CLR_ALL        &bt BT_PRV   &bt BT_CLR   &bt BT_NXT   &none                &trans &kp F7 &kp F8 &kp F9 &kp F10
-                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &trans &kp F4 &kp F5 &kp F6 &kp F11
-                &none        &none        &none        &none        &none                &trans &kp F1 &kp F2 &kp F3 &kp F12
-                                                       &trans       &trans               &trans &trans
+                &bt BT_CLR_ALL &bt BT_PRV   &bt BT_CLR   &bt BT_NXT   &none                &trans &kp F7 &kp F8 &kp F9 &kp F10
+                &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &trans &kp F4 &kp F5 &kp F6 &kp F11
+                &none          &none        &none        &none        &none                &to 4  &kp F1 &kp F2 &kp F3 &kp F12
+                                                         &trans       &trans               &trans &trans
               >;
             };
 
