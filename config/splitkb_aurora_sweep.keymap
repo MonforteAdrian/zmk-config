@@ -88,7 +88,7 @@
               bindings = <
                 &none   &kp N1 &kp N2 &kp N3 &none     &none  &none &none &none &none
                 &none   &none  &kp W  &kp E  &kp I     &to 0  &none &none &none &none
-                &kp ESC &kp A  &kp S  &kp D  &none     &none  &none &none &none &none
+                &kp ESC &kp A  &kp S  &kp D  &kp F     &none  &none &none &none &none
                                       &trans &kp SPC   &trans &trans
               >;
             };
