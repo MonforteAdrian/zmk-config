@@ -16,7 +16,11 @@
             , <&pro_micro 15 GPIO_ACTIVE_HIGH>
             ;
 };
-
+&left_encoder1 {
+    status = "okay";
+    a-gpios = <&pro_micro 8 GPIO_PULL_UP>;
+    b-gpios = <&pro_micro 8 GPIO_PULL_UP>;
+};
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
